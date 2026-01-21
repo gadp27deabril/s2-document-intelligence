@@ -1,0 +1,21 @@
+# S2 Document Intelligence - Community Edition
+# Core dependencies for document processing
+
+# Web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# PDF processing
+PyMuPDF==1.23.8
+
+# Image processing
+opencv-python==4.8.1.78
+numpy==1.24.3
+Pillow==10.1.0
+
+# OCR engines (optional, choose one or both)
+paddleocr==2.7.0.3  # Recommended: faster, more accurate
+easyocr==1.7.0      # Alternative OCR engine
+
+# Python version: 3.8+
